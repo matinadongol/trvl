@@ -1,0 +1,186 @@
+.form-container {
+  margin: 100px auto;
+  width: 1000px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-content-left {
+  position: relative;
+}
+
+.form-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* form success*/
+.form-img-2 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-success {
+  background: #fff;
+  height: 100%;
+  padding: 50px;
+}
+
+.form-success p {
+  font-size: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 200px;
+}
+
+.form-success button {
+  margin-top: 20px;
+  padding: 10px 5px 10px 5px;
+  width: 150px;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 20px;
+  float: right;
+}
+
+.form-success button:hover {
+  background: rgb(201, 201, 201);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  transition: all 0.3s ease-out;
+}
+
+.btnname {
+  text-decoration: none;
+  color: white;
+}
+
+.btnname:hover {
+  color: rgb(46, 46, 46);
+}
+
+.form-content-right {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  background: rgb(20, 20, 20);
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h3 {
+  font-size: 30px;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.form-inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+/*error message*/
+.form-inputs p {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+/*Sign Up button*/
+.form-input-btn {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(71, 71, 71) 0%,
+    rgb(110, 110, 110) 50%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.form-input-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(110, 110, 110) 0%,
+    rgb(71, 71, 71) 50%
+  );
+  transition: all 0.4s ease-out;
+}
+
+/*login question*/
+.form-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.form-input-login a {
+  text-decoration: none;
+  color: #b4afaf;
+  font-weight: 600;
+}
