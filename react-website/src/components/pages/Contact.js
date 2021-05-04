@@ -3,14 +3,18 @@ import '../../App.css';
 import Form from '../contact/contactform';
 import First from '../contact/first';
 import Footer from '../Footer';
+import { motion } from 'framer-motion';
+import { animationTwo, transition } from '../animations/index';
 
 
-export default function Comtact() {
+function Contact() {
     return (
-        <>
-        <First/>
-        <Form/>
-        <Footer/>
-        </>
+        <motion.div  initial='out' animate = 'in' exit = 'out' variants = {animationTwo} >
+            <First/>
+            <Form/>
+            <Footer/>
+        </motion.div>
     );
 }
+
+export default Contact;
