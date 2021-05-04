@@ -10,6 +10,7 @@ import SignUp from './components/pages/SignUp';
 import { AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 
+
 const Section = styled.section`
   overflow-x: hidden;
 `;
@@ -20,18 +21,18 @@ let location = useLocation();
 
   return (
     <>
-    <Navbar />
-    <Section>
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path='/' exact component = {Home}/>
-          <Route path='/offers' exact component = {Offers}/>
-          <Route path='/products' exact component = {Products}/>
-          <Route path='/contact' exact component = {Contact}/>
-          <Route path='/sign-up' exact component = {SignUp}/>
-        </Switch>
-      </AnimatePresence>
-    </Section>
+      <Navbar />
+      <Section>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={location} key={location.pathname}>
+            <Route path='/' exact component = {Home}/>
+            <Route path='/offers' exact component = {Offers}/>
+            <Route path='/products' exact component = {Products}/>
+            <Route path='/contact' exact component = {Contact}/>
+            <Route path='/sign-up' exact component = {SignUp}/>
+          </Switch>
+        </AnimatePresence>
+      </Section>
     </>
   );
 }
