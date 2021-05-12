@@ -15,6 +15,11 @@
   background: black;
 }
 
+/* .active_class {
+  background-color: yellow;
+  color: black;
+} */
+
 .navbar-container {
   display: flex;
   justify-content: center;

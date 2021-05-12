@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from  'react-router-dom';
+import { NavLink } from  'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
 
@@ -42,37 +42,37 @@ function Navbar() {
         <>
             <nav className={navbar ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    <NavLink exact activeClassName="active_class" to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         TRVL <i className="fab fa-typo3"></i>
-                    </Link>
+                    </NavLink>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
                     <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
                         <li className = 'nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink exact activeClassName="active_class" to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className = 'nav-item'>
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink exact activeClassName="active_class" to='/blogs' className='nav-links' onClick={closeMobileMenu}>
                                 Blog
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className = 'nav-item'>
-                            <Link to='/offers' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink exact activeClassName="active_class" to='/offers' className='nav-links' onClick={closeMobileMenu}>
                                 Offers and Packages
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className = 'nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink exact activeClassName="active_class" to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 Contact Us
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className = 'nav-item'>
-                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <NavLink exact activeClassName="active_class" to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Sign Up
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                     {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}

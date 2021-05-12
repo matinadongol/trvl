@@ -4,9 +4,10 @@ import {Switch, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/home';
 import Offers from './components/pages/Offers';
-import Products from './components/pages/products';
+import Blogs from './components/pages/Blogs';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
+import Error from './components/Error';
 import { AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -27,9 +28,10 @@ let location = useLocation();
           <Switch location={location} key={location.pathname}>
             <Route path='/' exact component = {Home}/>
             <Route path='/offers' exact component = {Offers}/>
-            <Route path='/products' exact component = {Products}/>
+            <Route path='/blogs' exact component = {Blogs}/>
             <Route path='/contact' exact component = {Contact}/>
             <Route path='/sign-up' exact component = {SignUp}/>
+            <Route component = {Error} />
           </Switch>
         </AnimatePresence>
       </Section>
