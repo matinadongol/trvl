@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import {Switch, Route, useLocation } from 'react-router-dom';
+import {Switch, Route, useLocation, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/home';
 import Offers from './components/pages/Offers';
@@ -31,7 +31,8 @@ let location = useLocation();
             <Route path='/blogs' exact component = {Blogs}/>
             <Route path='/contact' exact component = {Contact}/>
             <Route path='/sign-up' exact component = {SignUp}/>
-            <Route component = {Error} />
+            {/* <Route component = {Error} /> */}
+            <Redirect to="/" />
           </Switch>
         </AnimatePresence>
       </Section>

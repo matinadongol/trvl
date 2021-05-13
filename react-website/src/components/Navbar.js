@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from  'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
-
 function Navbar() {
     const [click, setClick] = useState(false);
 
@@ -41,7 +40,7 @@ function Navbar() {
     return (
         <>
             <nav className={navbar ? 'navbar active' : 'navbar'}>
-                <div className="navbar-container">
+                <div className="navbar-container ">
                     <NavLink exact activeClassName="active_class" to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         TRVL <i className="fab fa-typo3"></i>
                     </NavLink>

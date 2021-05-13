@@ -40,6 +40,7 @@ const Accordion = () => {
                         })
                     }
                 </div>
+                
             </div>
         </IconContext.Provider>
     )

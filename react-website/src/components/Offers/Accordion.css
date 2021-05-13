@@ -20,6 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* animation: up-down 2s ease-in-out infinite alternate-reverse both; */
 }
 
 .rightcontent {
@@ -60,4 +61,22 @@
   align-items: center;
   border-bottom: 6px solid #1f9266;
   border-top: 6px solid #1f9266;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
